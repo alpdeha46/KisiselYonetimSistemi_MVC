@@ -14,18 +14,21 @@ namespace NotDefteri.Controllers
         [HttpPost]
         public IActionResult Index(string kullanici, string sifre)
         {
-            
-            if (kullanici == "admin" && sifre == "1234")
-            {
-            
-                HttpContext.Session.SetString("kullanici", kullanici);
+            var kayitliSifre = HttpContext.Session.GetString("sifre") ?? "1234";
 
-                
-                return RedirectToAction("Index", "Anasayfa");
+            if (kullanici == "admin" && sifre == kayitliSifre)
+            {
+                HttpContext.Session.SetString("kullanici", kullanici);
+                return RedirectToAction("Index", "Note");
             }
 
             ViewBag.Hata = "Kullanıcı adı veya şifre yanlış!";
             return View();
         }
-    }
-}
+
+        public IActionResult Cikis()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index");
+        }
+    }}

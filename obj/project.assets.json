@@ -55,19 +55,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\suyad\\.nuget\\packages\\": {}
+    "/home/alp151/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\suyad\\Desktop\\Ders\\MVC\\NotDefteri\\NotDefteri\\NotDefteri.csproj",
+      "projectUniqueName": "/home/alp151/Masaüstü/MVC/kisisel/KisiselYonetimSistemi_MVC/NotDefteri.csproj",
       "projectName": "NotDefteri",
-      "projectPath": "C:\\Users\\suyad\\Desktop\\Ders\\MVC\\NotDefteri\\NotDefteri\\NotDefteri.csproj",
-      "packagesPath": "C:\\Users\\suyad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\suyad\\Desktop\\Ders\\MVC\\NotDefteri\\NotDefteri\\obj\\",
+      "projectPath": "/home/alp151/Masaüstü/MVC/kisisel/KisiselYonetimSistemi_MVC/NotDefteri.csproj",
+      "packagesPath": "/home/alp151/.nuget/packages/",
+      "outputPath": "/home/alp151/Masaüstü/MVC/kisisel/KisiselYonetimSistemi_MVC/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\suyad\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/alp151/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -121,7 +121,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.311/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

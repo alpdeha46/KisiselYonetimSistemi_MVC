@@ -100,26 +100,24 @@ namespace NotDefteri.Controllers
         }
 
         [HttpPost]
-        public IActionResult SifreDegistir(string eskiSifre, string yeniSifre)
-        {
-            if (LoginKontrol() != null) return LoginKontrol();
+public IActionResult SifreDegistir(string eskiSifre, string yeniSifre)
+{
+    if (LoginKontrol() != null) return LoginKontrol();
 
-            var kullanici = Veritabani.Kullanicilar.FirstOrDefault(u => u.KullaniciAdi == KullaniciAdi);
+    var mevcutSifre = HttpContext.Session.GetString("sifre") ?? "1234";
 
-            if (kullanici != null && kullanici.Sifre == eskiSifre)
-            {
-                kullanici.Sifre = yeniSifre;
-                Veritabani.KaydetKullanicilar(); // Kalıcı
-                TempData["Mesaj"] = "Şifre başarıyla değiştirildi!";
-            }
-            else
-            {
-                TempData["Hata"] = "Eski şifre yanlış!";
-            }
+    if (eskiSifre == mevcutSifre)
+    {
+        HttpContext.Session.SetString("sifre", yeniSifre);
+        TempData["Mesaj"] = "Şifre başarıyla değiştirildi!";
+    }
+    else
+    {
+        TempData["Hata"] = "Eski şifre yanlış!";
+    }
 
-            return RedirectToAction("Ayarlar");
-        }
-
+    return RedirectToAction("Ayarlar");
+}
         [HttpPost]
         public IActionResult TumNotlariSil()
         {

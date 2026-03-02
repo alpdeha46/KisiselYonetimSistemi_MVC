@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "dicATCmEavg=",
+  "dgSpecHash": "Vqnn1oK9H5A=",
   "success": true,
-  "projectFilePath": "C:\\Users\\suyad\\Desktop\\Ders\\MVC\\NotDefteri\\NotDefteri\\NotDefteri.csproj",
+  "projectFilePath": "/home/alp151/Masaüstü/MVC/kisisel/KisiselYonetimSistemi_MVC/NotDefteri.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\suyad\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512"
+    "/home/alp151/.nuget/packages/newtonsoft.json/13.0.4/newtonsoft.json.13.0.4.nupkg.sha512"
   ],
   "logs": []
 }
